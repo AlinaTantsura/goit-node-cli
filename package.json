@@ -8,7 +8,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "test",
-    "start": "start"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   },
   "author": "Alina Tantsura",
   "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AlinaTantsura/goit-node-cli/issues"
+  },
+  "homepage": "https://github.com/AlinaTantsura/goit-node-cli",
+  "keywords": [],
   "description": ""
 }
