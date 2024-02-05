@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "commander": "^11.1.0"
+    "commander": "^11.1.0",
+    "nanoid": "^5.0.5"
   },
   "name": "goit-node-cli",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "test",
     "start": "node index"

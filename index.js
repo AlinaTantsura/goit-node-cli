@@ -1,20 +1,5 @@
 import { program } from "commander";
-// const contact = require('./contacts.js')
-// const contact = require('./contacts.js');
-import  {listContacts, getContactById}  from "./contacts.js";
-// const fs = require('fs').promises;
-// import { readFile } from 'fs/promises';
-// import { resolve } from 'path';
-
-// const contactsPath = resolve('db','./contacts.json');
-
-// async function listContacts() {
-//  async function listContacts(){
-//    // ...твій код. Повертає масив контактів.
-//   //  const data = await readFile("db/contacts.json");
-//   //  return JSON.parse(data.toString());
-//   return await readFile(contactsPath).then(data => JSON.parse(data.toString())).catch(err => err);
-// }
+import  {listContacts, getContactById, removeContact, addContact}  from "./contacts.js";
 
 program
   .option("-a, --action <type>", "choose action")
@@ -42,10 +27,12 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case "add":
       // ... name email phone
+      console.log(await addContact(name, email, phone));
       break;
 
     case "remove":
       // ... id
+      console.log(await removeContact(id));
       break;
 
     default:
