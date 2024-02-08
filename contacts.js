@@ -1,8 +1,8 @@
 import { readFile, writeFile } from 'fs/promises';
 import { nanoid } from 'nanoid';
-import { resolve } from 'path';
+import { join} from 'path';
 
-const contactsPath = resolve('db','./contacts.json');
+const contactsPath = join(process.cwd(),"db", 'contacts.json')
 
 async function listContacts() {
   // ...твій код. Повертає масив контактів.
